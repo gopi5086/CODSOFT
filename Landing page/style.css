@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(232, 218, 218);
+    font-family: "Montserrat",sans-serif;
+}
+
+body .navbar img{
+    width: 100px;
+    height: 90px;
+    left: auto;
+    top: auto;
+    margin-right: auto;
+    left: 50px;
+    
+    
+    
+}
+body img{
+    display: flex;
+    position: relative;
+    left: 850px;
+    top: 110px;
+    background-size: cover;
+    height: 300px;
+    width: 400px;
+    
+
+}
+body .icons{
+    display:flex;
+    gap: 40px;
+    margin-left: 50px;
+    margin-top: -30px;
+    cursor: pointer;
+    border: none;
+}
+
+body .image2{
+    width: 40px;
+    height: 35px;
+    
+}
+body .image2:hover{
+    color: blueviolet;
+    border-style: none;
+    border-width: 1px;
+}
+body .image3{
+    width: 40px;
+    height: 35px;
+    
+
+
+}
+body .image4{
+    width: 40px;
+    height: 35px;
+}
+body .image5{
+    width: 40px;
+    height: 35px;
+}
+
+    
+
+body .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 10px;
+    
+}
+body .navbar button{
+    background-color:darkorange ;
+    width: 90px;
+    height: 40px;
+    position: relative;
+    right: 160px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: aliceblue;
+
+}
+body .navbar button:active{
+    background-color: rgb(230, 125, 13);
+}
+body .navbar input{
+    display: flex;
+    position: relative;
+    right: 70px;
+    padding: 10px;
+    width: 250px;
+    font-size: 18px;
+    border-radius: 5px;
+    color: rgb(16, 15, 15);
+    
+}
+body .navbar a{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(13, 14, 14);
+    font-size: 20px;
+    position: relative;
+    right: 200px;
+}
+body .navbar a:hover{
+    color:darkorange ;
+    
+}
+body .navbar a:active{
+    color: orange;
+}
+body .main{
+    position: relative;
+    bottom: 100px;
+    padding-left: 80px;
+    width: 580px;
+    margin-bottom:180px ;
+    left: 60px;
+}
+body .main button{
+    width: 170px;
+    height: 45px;
+    background-color: darkorange;
+    color: white;
+    font-size: 17px;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+    border-radius: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+body .main button:hover{
+    color: white;
+    background-color: black;
+}
+body .main h1{
+    margin-bottom: 15px;
+
+}
+body .main p{
+    margin-top: 10px;
+    font-size: 22px;
+    padding-top: 3px;
+
+}
+body .main span{
+    color: darkorange;
+}
+
