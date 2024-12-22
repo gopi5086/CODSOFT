@@ -1,158 +1,252 @@
-*{
+/* Reset and Basic Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
     background-color: rgb(232, 218, 218);
-    font-family: "Montserrat",sans-serif;
 }
 
-body .navbar img{
-    width: 100px;
-    height: 90px;
-    left: auto;
-    top: auto;
-    margin-right: auto;
-    left: 50px;
-    
-    
-    
-}
-body img{
+/* Navbar Styling */
+.navbar {
     display: flex;
-    position: relative;
-    left: 850px;
-    top: 110px;
-    background-size: cover;
-    height: 300px;
-    width: 400px;
-    
-
-}
-body .icons{
-    display:flex;
-    gap: 40px;
-    margin-left: 50px;
-    margin-top: -30px;
-    cursor: pointer;
-    border: none;
-}
-
-body .image2{
-    width: 40px;
-    height: 35px;
-    
-}
-body .image2:hover{
-    color: blueviolet;
-    border-style: none;
-    border-width: 1px;
-}
-body .image3{
-    width: 40px;
-    height: 35px;
-    
-
-
-}
-body .image4{
-    width: 40px;
-    height: 35px;
-}
-body .image5{
-    width: 40px;
-    height: 35px;
-}
-
-    
-
-body .navbar{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin-top: 10px;
-    
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-body .navbar button{
-    background-color:darkorange ;
-    width: 90px;
-    height: 40px;
-    position: relative;
-    right: 160px;
-    border-radius: 10px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    color: aliceblue;
 
+.navbar .logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
 }
-body .navbar button:active{
-    background-color: rgb(230, 125, 13);
-}
-body .navbar input{
+
+.navbar .navbar-links {
     display: flex;
-    position: relative;
-    right: 70px;
-    padding: 10px;
-    width: 250px;
-    font-size: 18px;
-    border-radius: 5px;
-    color: rgb(16, 15, 15);
-    
+    gap: 30px;
 }
-body .navbar a{
-    padding: 20px;
+
+.navbar a {
     text-decoration: none;
     color: rgb(13, 14, 14);
-    font-size: 20px;
-    position: relative;
-    right: 200px;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
-body .navbar a:hover{
-    color:darkorange ;
-    
-}
-body .navbar a:active{
-    color: orange;
-}
-body .main{
-    position: relative;
-    bottom: 100px;
-    padding-left: 80px;
-    width: 580px;
-    margin-bottom:180px ;
-    left: 60px;
-}
-body .main button{
-    width: 170px;
-    height: 45px;
-    background-color: darkorange;
-    color: white;
-    font-size: 17px;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 600;
-    border-radius: 15px;
-    margin-top: 20px;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
 
-}
-body .main button:hover{
-    color: white;
-    background-color: black;
-}
-body .main h1{
-    margin-bottom: 15px;
-
-}
-body .main p{
-    margin-top: 10px;
-    font-size: 22px;
-    padding-top: 3px;
-
-}
-body .main span{
+.navbar a:hover {
     color: darkorange;
 }
 
+.navbar .navbar-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .navbar-actions input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.navbar .navbar-actions button {
+    background-color: darkorange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .navbar-actions button:hover {
+    background-color: rgb(230, 125, 13);
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Hero Image Section */
+.hero-image {
+    text-align: center;
+    padding: 50px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+/* Social Icons Section */
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.social-icons .icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.social-icons .icon:hover {
+    opacity: 0.7;
+}
+
+/* Main Content Section */
+.main {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main span {
+    color: darkorange;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.main button {
+    background-color: darkorange;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.main button:hover {
+    background-color: rgb(230, 125, 13);
+}
+
+/* Responsive Styles */
+
+/* Mobile (Small Devices) */
+@media (max-width: 767px) {
+    /* Navbar Links */
+    .navbar .navbar-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .navbar .navbar-actions {
+        display: none;
+    }
+
+    /* Display Hamburger Menu */
+    .navbar .hamburger-menu {
+        display: flex;
+    }
+
+    /* Navbar Actions on Active State */
+    .navbar.active .navbar-links {
+        display: block;
+    }
+
+    .navbar.active .navbar-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar.active .navbar-actions input {
+        display: none;
+    }
+
+    /* Main Section */
+    .main h1 {
+        font-size: 28px;
+    }
+
+    .main p {
+        font-size: 16px;
+    }
+
+    .main button {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* Tablet (Medium Devices) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .navbar .navbar-links {
+        gap: 20px;
+    }
+
+    .navbar .navbar-actions {
+        gap: 20px;
+    }
+
+    .main {
+        padding: 50px 20px;
+    }
+}
+
+/* Desktop (Large Devices) */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 20px 50px;
+    }
+
+    .navbar .navbar-links {
+        gap: 30px;
+    }
+
+    .navbar .navbar-actions {
+        gap: 20px;
+    }
+
+    .main {
+        padding: 60px 40px;
+    }
+
+    .main h1 {
+        font-size: 36px;
+    }
+
+    .main p {
+        font-size: 18px;
+    }
+}
