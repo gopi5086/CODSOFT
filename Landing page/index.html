@@ -3,44 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
+    <title>Landing Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com"/>
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    
-    <div class="navbar">
-        <img src="landing/images__3_-removebg-preview.png" Education>
-        
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Events</a>
-        <a href="#">Courses</a>
-        <a href="#">Contact</a>
-        <button class="login-b">Login</button>
-        <input type="text" placeholder="Search" class="active">
-    </div>
-    <div>
-    <img class="image" src="landing/—Pngtree—work at home concept design_7430117.png" >
-    
-</div>
-   <div class="icons">
-      <img class="image2" src="landing/icons8-linkedin-logo-30-removebg-preview.png">
-      <img class="image3" src="landing/icons8-github-48-removebg-preview.png">
-      <img class="image4" src="landing/icons8-facebook-logo-30-removebg-preview.png">
-     <img class="image5" src="landing/icons8-instagram-logo-30-removebg-preview.png">
-    </div> 
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="landing/images__3_-removebg-preview.png" alt="Logo">
+        </div>
 
+        <!-- Navbar links (for large screens) -->
+        <nav class="navbar-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Events</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </nav>
 
-    <div class="main">
+        <!-- Navbar actions (Login and Search) -->
+        <div class="navbar-actions">
+            <input type="text" placeholder="Search">
+            <button class="login-b">Login</button>
+        </div>
+
+        <!-- Hamburger menu (for mobile view) -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Main Content Image) -->
+    <section class="hero-image">
+        <img src="landing/—Pngtree—work at home concept design_7430117.png" alt="Work at Home">
+    </section>
+
+    <!-- Social Icons -->
+    <section class="social-icons">
+        <img class="icon" src="landing/icons8-linkedin-logo-30-removebg-preview.png" alt="LinkedIn">
+        <img class="icon" src="landing/icons8-github-48-removebg-preview.png" alt="GitHub">
+        <img class="icon" src="landing/icons8-facebook-logo-30-removebg-preview.png" alt="Facebook">
+        <img class="icon" src="landing/icons8-instagram-logo-30-removebg-preview.png" alt="Instagram">
+    </section>
+
+    <!-- Main Section (Content and Call to Action) -->
+    <section class="main">
         <h1>EDUCATION AND <span>TRAININGS</span></h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit possimus delectus nisi voluptatem et voluptatum iure voluptas, doloribus minima enim!</p>
         <button>Get started</button>
-    </div>
+    </section>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
